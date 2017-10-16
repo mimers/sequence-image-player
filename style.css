@@ -1,0 +1,30 @@
+span#control {
+    display: inline-block;
+    width: 300px;
+}
+
+input {
+    display: block;
+    margin: 20px 5px;
+}
+
+span#canvas {
+    display: block;
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    /* border: dashed 3px; */
+    background-color: white;
+    text-align: center;
+}
+body {
+    /* background-image: -webkit-linear-gradient(top,#B69191,#FBB040); */
+    margin: 0;
+}
+
+img#frame {
+    margin: 5px;
+    /* width: 100px; */
+    /* height: 100px; */
+    border: solid white 0.5px;
+    cursor: pointer;
+}
