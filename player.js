@@ -1,7 +1,7 @@
 var frame = document.querySelector('#frame')
 var canvas = document.querySelector('#canvas')
 var timer, images
-var delay = 1000 / 24
+var delay = 3000 / 49
 var currentFrame = 0
 
 function play() {
@@ -18,6 +18,17 @@ function toArray(array) {
 		result.push(array[i])
 	}
 	return result
+}
+
+function resetTimer(delay) {
+    clearInterval(timer)
+    timer = setInterval(play, delay)
+}
+
+document.querySelector('input[type="range"]').onchange = function (event) {
+    var value = event.target.value
+    document.querySelector('#delay-value').textContent = value
+    resetTimer(value)
 }
 
 document.querySelector('input[type="file"]').onchange = function(event) {

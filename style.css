@@ -4,12 +4,10 @@ span#control {
 }
 
 input {
-    display: block;
     margin: 20px 5px;
 }
 
 span#canvas {
-    display: block;
     width: calc(100% - 300px);
     margin-left: 300px;
     /* border: dashed 3px; */

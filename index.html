@@ -8,12 +8,17 @@
 
 <body>
     <span id="control">
-    	<input type="file" name="images" multiple>
-    	<input type="checkbox" name="theme">
-    	<input type="range" name="delay">
+        <div>
+            <input type="file" name="images" multiple/><span id="file-names"></span></div>
+    <div>
+        <input type="checkbox" name="theme" /><span id="theme-label"></span></div>
+    <div>
+        <span>delay:</span>
+        <input type="range" name="delay" value="41" min="1" max="1000" /><span id="delay-value"></span>ms
+    </div>
     </span>
     <span id="canvas">
-    	<img id="frame">
+        <img id="frame">
     </span>
     <script type="text/javascript" src="player.js"></script>
 </body>
